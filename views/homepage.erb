@@ -5,7 +5,7 @@ Currency pairs
 <ul>
 <% @parsed_data.fetch("currencies").keys.each do |p| %>
    <li>
-      <a href ="/p">Convert 1 <%= p %> to...</a>
+      <a href ="/<%= p %>">Convert 1 <%= p %> to...</a>
    </li>
 <% end %>
 </ul>
