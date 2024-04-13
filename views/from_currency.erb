@@ -9,7 +9,7 @@ Go<a href="/"> back. </a>
 <ul>
 <% @parsed_data.fetch("currencies").keys.each do |p| %>
    <li>
-      <a href ="/">Convert 1 <%= @original_currency %> to <%= p %>...</a>
+      <a href ="/<%= @original_currency %>/<%= p %>">Convert 1 <%= @original_currency %> to <%= p %>...</a>
    </li>
 <% end %>
 </ul>
