@@ -1,1 +1,11 @@
-@parsed_data
+<h1>
+Currency pairs
+</h1>
+
+<ul>
+<% @parsed_data.fetch("currencies").keys.each do |p| %>
+   <li>
+      <a href ="/p">Convert 1 <%= p %> to...</a>
+   </li>
+<% end %>
+</ul>
